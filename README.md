@@ -31,7 +31,7 @@ A bridge can transfer bidirectionnaly data between two brokers or more. This pat
 
 ## Prerequisites
 
-You have an instance Home Assistant running locally on a raspberry pi or other.
+You have an instance Home Assistant running locally on a [raspberry pi](https://www.home-assistant.io/installation/raspberrypi) or [other](https://www.home-assistant.io/installation/).
 Some official add-ons need to be installed before to going further :
 -  Install "Terminal & SSH" :
    - In order to install this add-on, you need to enable "Advanced Mode" in your "profile" to see it
