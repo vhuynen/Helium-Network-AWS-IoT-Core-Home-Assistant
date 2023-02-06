@@ -299,7 +299,7 @@ In order to ingest MQTT message by Home Assistant, you will have to enrich the c
 
 
 Below, an extract of my MQTT Sensor configuration :
-``` json
+``` yaml
 mqtt:
   sensor:
     - name: "Outdoor Temperature"
