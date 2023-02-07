@@ -77,7 +77,7 @@ Before sending your messages to AWS IoT Core from Helium, you must configure the
 
 ### Flow
 
-To forward devices's messages to AWS ioT Core, I route the flow just after an JSON decoder function to the AWS Integration. The devices's data are always decoded Helium side into JSON format and sended as is to AWS IoT Core. Here is a sample of what you can receive from Helium : [data-from-helium-to-aws-iot-core.json](./src/data-from-helium-to-aws-iot-core.json).
+To forward devices's messages to AWS IoT Core, I route the flow just after an JSON decoder function to the AWS Integration. The devices's data are always decoded Helium side into JSON format and sended as is to AWS IoT Core. Here is a sample of what you can receive from Helium : [data-from-helium-to-aws-iot-core.json](./src/data-from-helium-to-aws-iot-core.json).
 
 Right below, the basic flow used to forward messages to AWS IoT Core and other Integrations :
 
@@ -291,7 +291,7 @@ Step 3 :
     - Enter the command : ``` mosquitto_pub -h <Broker IP> -u mqtt_admin -P <password> -t ha/helloworld on -m "Hello from Home Assistant"```
   - Come back to the AWS ```MQTT test client``` and "well done" your have received a message from Home Assistant !
 
-💡 If you want to send data from Home Assistant to AWS ioT Core, you should use the [mqtt_statestream](https://www.home-assistant.io/integrations/mqtt_statestream/) integration. This integration allows to publish any entity changes into a specific ```base_topic```, in our case ```ha```. 
+💡 If you want to send data from Home Assistant to AWS IoT Core, you should use the [mqtt_statestream](https://www.home-assistant.io/integrations/mqtt_statestream/) integration. This integration allows to publish any entity changes into a specific ```base_topic```, in our case ```ha```. 
 
 ### MQTT Sensor
 

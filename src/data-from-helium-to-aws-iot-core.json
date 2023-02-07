@@ -1,0 +1,37 @@
+{
+    "barometer": {
+        "context": {
+            "uplink_fcnt": 9798
+        },
+        "timestamp": 1675789314358,
+        "value": 1029.7
+    },
+    "battery": {
+        "context": {
+            "uplink_fcnt": 9798
+        },
+        "timestamp": 1675789314358,
+        "value": 3.96
+    },
+    "humidity": {
+        "context": {
+            "uplink_fcnt": 9798
+        },
+        "timestamp": 1675789314358,
+        "value": 76.5
+    },
+    "lux": {
+        "context": {
+            "uplink_fcnt": 9798
+        },
+        "timestamp": 1675789314358,
+        "value": 0
+    },
+    "temperature": {
+        "context": {
+            "uplink_fcnt": 9798
+        },
+        "timestamp": 1675789314358,
+        "value": 3.8
+    }
+}
