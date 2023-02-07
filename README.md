@@ -291,7 +291,19 @@ Step 3 :
     - Enter the command : ``` mosquitto_pub -h <Broker IP> -u mqtt_admin -P <password> -t ha/helloworld on -m "Hello from Home Assistant"```
   - Come back to the AWS ```MQTT test client``` and "well done" your have received a message from Home Assistant !
 
-💡 If you want to send data from Home Assistant to AWS IoT Core, you should use the [mqtt_statestream](https://www.home-assistant.io/integrations/mqtt_statestream/) integration. This integration allows to publish any entity changes into a specific ```base_topic```, in our case ```ha```. 
+💡 If you want to send data from Home Assistant to AWS IoT Core, you should use the [mqtt_statestream](https://www.home-assistant.io/integrations/mqtt_statestream/) integration. This integration allows to publish any entity changes into a specific ```base_topic```.
+
+Below, the configuration in order to send entity changes into the local Topic ```ha``` :
+
+``` yaml
+mqtt_statestream:
+  base_topic: ha
+  include:
+    entity_globs:
+      - sensor.*temperature*
+  publish_attributes: true
+  publish_timestamps: true
+```
 
 ### MQTT Sensor
 
