@@ -226,7 +226,7 @@ bridge_keyfile /ssl/mosquitto/aws_iotcore_home_assistant.key
 
 #END of bridge.conf
 ```
-Below, the propertie about the remote topic subscribed by the bridge :
+Below, the property about the remote topic subscribed by the bridge :
 
 
 ``` properties
@@ -291,6 +291,7 @@ Step 3 :
     - Enter the command : ``` mosquitto_pub -h <Broker IP> -u mqtt_admin -P <password> -t ha/helloworld on -m "Hello from Home Assistant"```
   - Come back to the AWS ```MQTT test client``` and "well done" your have received a message from Home Assistant !
 
+💡 If you want to send data from Home Assistant to AWS ioT Core, you should use the [mqtt_statestream](https://www.home-assistant.io/integrations/mqtt_statestream/) integration. This integration allows to publish any entity changes into a specific ```base_topic```, in our case ```ha```. 
 
 ### MQTT Sensor
 
@@ -335,7 +336,7 @@ mqtt:
 
 ### Home Assistant Dashboard
 
-Now, that I have synchronised my external data sensors with Home Assistant, I will be able to use them to control my house for futur purpose.  
+Now, that I have synchronised my external data sensors with Home Assistant, I will be able to use them to control my house for future purposes.  
 
 <img src="./img/home-assistant-dashboard.png" alt="home-assistant-dashboard" width="50%" height ="50%"/>
 
