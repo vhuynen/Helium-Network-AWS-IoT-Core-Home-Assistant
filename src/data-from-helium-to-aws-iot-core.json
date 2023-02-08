@@ -1,37 +1,93 @@
 {
-    "barometer": {
+  "app_eui": "6081F9EG72378939",
+  "dc": {
+    "balance": 1867,
+    "nonce": 2
+  },
+  "decoded": {
+    "payload": {
+      "barometer": {
         "context": {
-            "uplink_fcnt": 9798
+          "uplink_fcnt": 9864
         },
-        "timestamp": 1675789314358,
-        "value": 1029.7
-    },
-    "battery": {
+        "timestamp": 1675848714898,
+        "value": 1028.6
+      },
+      "battery": {
         "context": {
-            "uplink_fcnt": 9798
+          "uplink_fcnt": 9864
         },
-        "timestamp": 1675789314358,
-        "value": 3.96
-    },
-    "humidity": {
+        "timestamp": 1675848714898,
+        "value": 3.98
+      },
+      "humidity": {
         "context": {
-            "uplink_fcnt": 9798
+          "uplink_fcnt": 9864
         },
-        "timestamp": 1675789314358,
-        "value": 76.5
-    },
-    "lux": {
+        "timestamp": 1675848714898,
+        "value": 93
+      },
+      "lux": {
         "context": {
-            "uplink_fcnt": 9798
+          "uplink_fcnt": 9864
         },
-        "timestamp": 1675789314358,
+        "timestamp": 1675848714898,
         "value": 0
-    },
-    "temperature": {
+      },
+      "temperature": {
         "context": {
-            "uplink_fcnt": 9798
+          "uplink_fcnt": 9864
         },
-        "timestamp": 1675789314358,
-        "value": 3.8
+        "timestamp": 1675848714898,
+        "value": -1.9
+      }
+    },
+    "status": "success"
+  },
+  "dev_eui": 75446XRIKQ508035
+  "devaddr": "02011052",
+  "fcnt": 9864,
+  "hotspots": [
+    {
+      "channel": 6,
+      "frequency": 868.2999877929688,
+      "hold_time": 0,
+      "id": "11Zn1giN6v6jMYRZS3s1VzWoXZRimYEhY9zig23VmsTer7NZTH8",
+      "lat": 47.85121276637869,
+      "long": 0.1228449243610425,
+      "name": "skinny-basil-monkey",
+      "reported_at": 1675848714898,
+      "rssi": -109,
+      "snr": -1.2000000476837158,
+      "spreading": "SF12BW125",
+      "status": "success"
     }
+  ],
+  "id": "ec366aac-a798-11ed-afa1-0242ac120002",
+  "metadata": {
+    "adr_allowed": false,
+    "cf_list_enabled": false,
+    "labels": [
+      {
+        "id": "d5b423be-a798-11ed-afa1-0242ac120002",
+        "name": "Weather Station",
+        "organization_id": "ec36594a-a798-11ed-afa1-0242ac120002"
+      }
+    ],
+    "multi_buy": 1,
+    "organization_id": "ec36594a-a798-11ed-afa1-0242ac120002",
+    "preferred_hotspots": [],
+    "rx_delay": 1,
+    "rx_delay_actual": 1,
+    "rx_delay_state": "rx_delay_established"
+  },
+  "name": "RAK4631 -  Outdoor Weather Station ",
+  "payload": "Amf/7QdougZzKC4MZQAACAIBjg==",
+  "payload_size": 19,
+  "port": 2,
+  "raw_packet": "QAIAAEiAiCYClw+RVgFi5LXY06+iigCxSiZaF0RWIoU=",
+  "replay": false,
+  "reported_at": 1675848714898,
+  "type": "uplink",
+  "uuid": "ec366e76-a798-11ed-afa1-0242ac120002"
 }
