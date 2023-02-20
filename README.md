@@ -226,14 +226,20 @@ bridge_keyfile /ssl/mosquitto/aws_iotcore_home_assistant.key
 
 #END of bridge.conf
 ```
-Below, the property about the remote topic subscribed by the bridge :
 
+Below, the device data endpoint address refers to the URL that uniquely identifies the location of your AWS MQTT Broker :
+
+``` properties
+address xxxxxxxxxxxxxx-ats.iot.<region>.amazonaws.com:8883
+```
+> You can retrieve this property in the **Settings** of the IoT Core console.
+
+Below, the property about the remote topic subscribed by the bridge :
 
 ``` properties
 topic arn:aws:iot:<region>:<account>:thing/Home_Assistant/# in 1
 ```
 > Thanks to the joker ```#``` the broker retreive all messages from the remote thing ```arn:aws:iot:<region>:<account>:thing/Home_Assistant``` and publishes them into the same local topic.
-
 
 Below, the property about the local topic subscribe by the bridge :
 
