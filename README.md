@@ -227,7 +227,7 @@ bridge_keyfile /ssl/mosquitto/aws_iotcore_home_assistant.key
 #END of bridge.conf
 ```
 
-Below, the device data endpoint address refers to the URL that uniquely identifies the location of your AWS MQTT Broker :
+The device data endpoint address refers to the URL that uniquely identifies the location of your AWS MQTT Broker :
 
 ``` properties
 address xxxxxxxxxxxxxx-ats.iot.<region>.amazonaws.com:8883
