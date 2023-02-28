@@ -167,7 +167,7 @@ In this section, we are going to describe how to configure your MQTT Bridge and 
 
 ### Bridge MQTT
 
-Now, you are going to configure the bridge in order to retreive messages from the thing Home Assistant hosted by AWS IoT Core.
+Now, you are going to configure the bridge in order to retrieve messages from the thing ```Home_Assistant``` hosted by AWS IoT Core.
 
 
 Step 1 :
