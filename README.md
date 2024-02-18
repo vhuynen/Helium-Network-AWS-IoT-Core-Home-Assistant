@@ -271,7 +271,7 @@ bridge_keyfile /ssl/mosquitto/aws_iotcore_home_assistant.key
 
   - When all your settings seem well, save the file ```bridge-mqtt-aws-iot-core.conf```
   - Restart your Mosquitto MQTT Broker
-  - Check into the Logs that your customized configuration file ```share/mosquittobridge-mqtt-aws-iot-core.conf``` is well loaded :
+  - Check into the Logs that your customized configuration file ```share/mosquitto/bridge-mqtt-aws-iot-core.conf``` is well loaded :
 ```
 [20:52:23] INFO: Starting NGINX for authentication handling...
 [20:52:23] INFO: Starting mosquitto MQTT broker...
